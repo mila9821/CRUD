@@ -44,18 +44,17 @@
                 </div>
               </th>
               <th scope="col">ID</th>
-              <th class="max-width">Name</th>
-              <th scope="col">Login</th>
-              <th scope="col">Password</th>
-              <th scope="col">Tarea</th>
-              <th class="col">Estado</th>
+              <th class="max-width">Plato</th>
+              <th scope="col">precio</th>
+              <th scope="col">Photo</th>
+
               <th> </th>
               <th>Actions</th>
               </tr>
             </thead>
             <tbody>
                 <!-- se usa el metodo listar de listausuario.componet.ts -->
-              <tr *ngFor="let usuario ">
+              <tr *ngFor="let restaurante  of listaRestaurante">
                     <td class="align-middle">
                     <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
                     <input type="checkbox" class="custom-control-input" id="item-1" />
@@ -63,14 +62,14 @@
                     </div>
                     </td>
                     <!-- Utilizamos la interface para obtener los datos -->
-                    <th class="text-nowrap align-middle" scope="row">{{ usuario.id }}</th>
+                    <th class="text-nowrap align-middle" scope="row">{{ restaurante.id }}</th>
                     <!-- Foto -->
-                    <td class="text-nowrap align-middle">{{ usuario.nombre }}</td>
+                    <td class="text-nowrap align-middle">{{ restaurante.nombrePlato }}</td>
                     <!-- Nombre -->
-                    <td class="text-nowrap align-middle">{{ usuario.login }}</td>
-                    <td class="text-nowrap align-middle">{{ usuario.password }}</td>
-                    <td class="text-nowrap align-middle">{{ usuario.tarea }}</td>
-                    <td class="text-nowrap align-middle"><span>{{ usuario.estado }}</span></td>
+                    <td class="text-nowrap align-middle">{{ restaurante.precioPlato }}</td>
+                    <td class="text-nowrap align-middle">{{ restaurante.fotoRestaurante }}</td>
+
+
                     <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
                 
                     <!--==================================================================================================================
@@ -113,7 +112,9 @@
         <div class="card">
         <div class="card-body">
           <div class="text-center px-xl-3">
-          <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">New User</button>
+            <a href="restaurante/nuevorestaurante">
+              <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">New Food</button>
+            </a>
           </div>
           <hr class="my-3" />
           <div class="e-navlist e-navlist--active-bold">

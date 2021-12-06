@@ -19,4 +19,8 @@ export class TestimonioService {
     });
   }
 
+  agregarTestimonio(testimonio: Testimonio){
+    this.http.post<any>('http://127.0.0.1:8080/api/testimonio', testimonio).subscribe();
+  }
+
 }

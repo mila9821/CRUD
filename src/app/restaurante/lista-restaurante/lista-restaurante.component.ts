@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestauranteService } from '../restaurante.service';
 
 @Component({
   selector: 'app-lista-restaurante',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaRestauranteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restauranteService: RestauranteService) { 
+    this.restauranteService.listarRestaurante();
+  }
 
   ngOnInit(): void {
+  }
+
+  get listaRestaurante(){
+    
+    return this.restauranteService.lista;
   }
 
 }

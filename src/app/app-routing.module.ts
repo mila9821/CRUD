@@ -9,6 +9,11 @@ import { ListahabitacionComponent } from './habitacion/listahabitacion/listahabi
 import { ListadetallereservaComponent } from './detallereserva/listadetallereserva/listadetallereserva.component';
 import { ListaclienteComponent } from './cliente/listacliente/listacliente.component';
 import { NuevousuarioComponent } from './usuario/nuevousuario/nuevousuario.component';
+import { NuevotestimonioComponent } from './testimonio/nuevotestimonio/nuevotestimonio.component';
+import { NuevohabitacionComponent } from './habitacion/nuevohabitacion/nuevohabitacion.component';
+import { NuevodetallereservaComponent } from './detallereserva/nuevodetallereserva/nuevodetallereserva.component';
+import { NuevoclienteComponent } from './cliente/nuevocliente/nuevocliente.component';
+import { NuevorestauranteComponent } from './restaurante/nuevorestaurante/nuevorestaurante.component';
 
 const routes: Routes = [
   {
@@ -32,8 +37,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'testimonio/nuevotestimonio',
+    component: NuevotestimonioComponent,
+    pathMatch: 'full'
+  },
+  {
     path: 'restaurante',
     component: ListaRestauranteComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'restaurante/nuevorestaurante',
+    component: NuevorestauranteComponent,
     pathMatch: 'full'
   },
   {
@@ -42,15 +57,30 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'habitacion/nuevohabitacion',
+    component: NuevohabitacionComponent,
+    pathMatch: 'full'
+  },
+  {
     path: 'detallereserva',
     component: ListadetallereservaComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'detallereserva/nuevodetallereserva',
+    component: NuevodetallereservaComponent,
     pathMatch: 'full'
   },
   {
     path: 'cliente',
     component: ListaclienteComponent,
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'cliente/nuevocliente',
+    component: NuevoclienteComponent,
+    pathMatch: 'full'
+  },
 
 ];
 

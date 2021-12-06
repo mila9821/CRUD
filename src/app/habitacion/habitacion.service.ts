@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Habitacion } from '../Interfaces/habitacion.interface';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,11 +13,15 @@ export class HabitacionService {
   public lista: Habitacion[] = [];
 
   // hace una lista desde interfaces usuario
-  listarUsuario(){
-    this.http.get<Habitacion[]>('http://127.0.0.1:8080/api/usuarios')
+  listarHabitacion(){
+    this.http.get<Habitacion[]>('http://127.0.0.1:8080/api/habitacion')
     .subscribe((respuesta: any) => {
       this.lista = respuesta;
     });
+  }
+
+  agregarHabitacion(Habitacion: Habitacion){
+    this.http.post<any>('http://127.0.0.1:8080/api/habitacion', Habitacion).subscribe();
   }
 
 }

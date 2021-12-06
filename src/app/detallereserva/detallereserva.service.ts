@@ -13,10 +13,14 @@ export class DetallereservaService {
 
   // hace una lista desde interfaces usuario
   listarDetalle(){
-    this.http.get<DetalleReserva[]>('http://127.0.0.1:8080/api/usuarios')
+    this.http.get<DetalleReserva[]>('http://127.0.0.1:8080/api/detallaReserva')
     .subscribe((respuesta: any) => {
       this.lista = respuesta;
     });
+  }
+
+  agregarDetalle(detalle: DetalleReserva){
+    this.http.post<any>('http://127.0.0.1:8080/api/detalleReserva', detalle).subscribe();
   }
 
 }
