@@ -14,6 +14,8 @@ export class UsuarioService {
   public lista: Usuario[] = [];
 
   // hace una lista desde interfaces usuario
+
+  // metodos
   listarUsuario(){
     this.http.get<Usuario[]>('http://127.0.0.1:8080/api/usuarios')
     .subscribe((respuesta: any) => {
