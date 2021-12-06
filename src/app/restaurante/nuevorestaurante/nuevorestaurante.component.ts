@@ -19,7 +19,9 @@ export class NuevorestauranteComponent implements OnInit {
       id: 0,
       nombrePlato: inputPlato,
       precioPlato: inputPrecio,
-      fotoRestaurante: inputFoto
+      fotoRestaurante: inputFoto,
+      tieneDetalleReservaRest: [],
+      detalleReservas: []
     };
 
     this.restauranteService.agregarRestaurante(nuevoRestaurante);

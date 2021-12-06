@@ -7,6 +7,6 @@ export interface Cliente {
     email:           string;
     pais:            string;
     dni:             string;
-    //testimonios:     Testimonio[];
-    //detalleReservas: DetalleReserva[];
+    testimonios:     any[];
+    detalleReservas: any[];
 }

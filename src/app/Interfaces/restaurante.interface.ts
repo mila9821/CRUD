@@ -3,6 +3,6 @@ export interface Restaurante {
     nombrePlato:             string;
     precioPlato:             number;
     fotoRestaurante:         string;
-    //tieneDetalleReservaRest: DetalleReserva[];
-    //detalleReservas:         DetalleReserva[];
+    tieneDetalleReservaRest: any[];
+    detalleReservas:         any[];
 }

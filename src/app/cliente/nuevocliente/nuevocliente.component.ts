@@ -23,12 +23,11 @@ export class NuevoclienteComponent implements OnInit {
       telefono: inputTelefono,
       email: inputEmail,
       pais: inputPais,
-      dni: inputDni     
-
+      dni: inputDni,
+      testimonios: [],
+      detalleReservas: []
     };
     this.clienteService.agregarCliente(nuevoCliente);
   }
-
-  
 
 }

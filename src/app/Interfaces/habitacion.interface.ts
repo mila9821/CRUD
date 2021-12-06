@@ -6,5 +6,5 @@ export interface Habitacion {
     tipoHabitacion:         string;
     precioHabitacion:       number;
     descripcionHabitacion:  string;
-    //tieneDetalleReservaHab: TieneDetalleReservaHab[];
+    tieneDetalleReservaHab: any[];
 }

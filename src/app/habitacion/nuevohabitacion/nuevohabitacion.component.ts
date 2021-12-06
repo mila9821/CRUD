@@ -22,8 +22,8 @@ export class NuevohabitacionComponent implements OnInit {
       estadoHabitacion: inputEstado,
       tipoHabitacion: inputTipo,
       precioHabitacion: inputPrecio,
-      descripcionHabitacion: inputDescripcion
-
+      descripcionHabitacion: inputDescripcion,
+      tieneDetalleReservaHab: []
     };
 
     this.habitacionService.agregarHabitacion(nuevoHabitacion);
