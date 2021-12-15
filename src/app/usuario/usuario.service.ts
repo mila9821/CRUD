@@ -28,11 +28,11 @@ export class UsuarioService {
   }
 
   eliminarUsuario(id:number){
-    this.http.delete<any>('http://127.0.0.1:8080/api/usuarios/'+ id).subscribe();
+    this.http.delete<any>('http://127.0.0.1:8080/api/administradores/'+ id).subscribe();
   }
 
   editarUsuario(id:number, usuarioM:Usuario){
-    this.http.put<Usuario[]>('http://127.0.0.1:8080/api/usuarios/'+ id,usuarioM)
+    this.http.put<Usuario[]>('http://127.0.0.1:8080/api/administradores/'+ id,usuarioM)
     .subscribe((respuesta: any)=>{
       this.lista = respuesta;
     });
