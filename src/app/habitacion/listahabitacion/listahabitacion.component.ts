@@ -20,4 +20,9 @@ export class ListahabitacionComponent implements OnInit {
     return this.habitacionService.lista;
   }
 
+  eliminarHabitacion(id: number){
+    this.habitacionService.eliminarHabitacion(id);
+  }
+
+
 }

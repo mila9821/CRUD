@@ -24,4 +24,8 @@ export class HabitacionService {
     this.http.post<any>('http://127.0.0.1:8080/api/habitacion', Habitacion).subscribe();
   }
 
+  eliminarHabitacion(id:number){
+    this.http.delete<any>('http://127.0.0.1:8080/api/habitacion/'+ id).subscribe();
+  }
+
 }

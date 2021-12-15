@@ -20,4 +20,8 @@ export class ListadetallereservaComponent implements OnInit {
     return this.detallereservaService.lista;
   }
 
+  eliminarDetalle(id: number){
+    this.detallereservaService.eliminarDetalle(id);
+  }
+
 }

@@ -13,11 +13,19 @@ export class ListausuarioComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    
   }
 
   get listaUsuario(){
-    
     return this.usuarioService.lista;
   }
+
+  
+
+  eliminarUsuario(id: number){
+    this.usuarioService.eliminarUsuario(id);
+  }
+
+ 
 
 }

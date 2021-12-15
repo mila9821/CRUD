@@ -20,4 +20,8 @@ export class ListaTestimonioComponent implements OnInit {
     return this.testimonioService.lista;
   }
 
+  eliminarTestimonio(id: number){
+    this.testimonioService.eliminarTestimonio(id);
+  }
+
 }

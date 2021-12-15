@@ -1,0 +1,57 @@
+<form>
+    <div class="form-header">
+        <h5 class="form-title">Create User</h5>
+    </div>
+    <div class="col">
+    <div class="row">
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input class="form-control" type="text" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                #inputNombre/>
+        </div>
+    </div>
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Username - Login</label>
+        <input class="form-control" type="text" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                #inputLogin/>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input class="form-control" type="text" placeholder="pasword123.a" id="passwordInput"
+                #inputPassword/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">Estado</label>
+            <input class="form-control" type="number" placeholder="1 or 2" id="estadoInput"
+                #inputEstado/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <div class="mb-3">
+            <label class="form-label">Tarea</label>
+            <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="tareaInput"
+                #inputTarea></textarea>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="text-end px-xl-3">
+        <a href="usuario" >
+            <button (click)="editar(inputNombre.value,inputLogin.value,inputPassword.value,inputEstado.valueAsNumber,inputTarea.value)"
+            class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">Create User</button>
+          </a>
+    
+    </div>
+  </form>

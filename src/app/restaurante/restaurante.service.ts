@@ -24,4 +24,8 @@ export class RestauranteService {
     this.http.post<any>('http://127.0.0.1:8080/api/restaurante', restaurante).subscribe();
   }
 
+  eliminarRestaurante(id:number){
+    this.http.delete<any>('http://127.0.0.1:8080/api/restaurante/'+ id).subscribe();
+  }
+
 }

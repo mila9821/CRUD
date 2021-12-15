@@ -7,8 +7,8 @@ import { Usuario } from '../Interfaces/usuario.interface';
 })
 export class UsuarioService {
 
-  constructor(private http: HttpClient) { 
-    
+  constructor(private http: HttpClient) {
+
   }
 
   public lista: Usuario[] = [];
@@ -26,5 +26,20 @@ export class UsuarioService {
   agregarUsuario(usuario: Usuario){
     this.http.post<any>('http://127.0.0.1:8080/api/usuarios', usuario).subscribe();
   }
+
+  eliminarUsuario(id:number){
+    this.http.delete<any>('http://127.0.0.1:8080/api/usuarios/'+ id).subscribe();
+  }
+
+  editarUsuario(id:number, usuarioM:Usuario){
+    this.http.put<Usuario[]>('http://127.0.0.1:8080/api/usuarios/'+ id,usuarioM)
+    .subscribe((respuesta: any)=>{
+      this.lista = respuesta;
+    });
+  }
+
+  // editarUsuario(id:number,usuario: Usuario){
+  //   this.http.put<any>('http://127.0.0.1:8080/api/usuarios/'+id, usuario).subscribe();
+  // }
 
 }

@@ -20,4 +20,8 @@ export class ListaRestauranteComponent implements OnInit {
     return this.restauranteService.lista;
   }
 
+  eliminarRestaurante(id: number){
+    this.restauranteService.eliminarRestaurante(id);
+  }
+
 }
