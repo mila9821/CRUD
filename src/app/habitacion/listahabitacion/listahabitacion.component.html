@@ -45,7 +45,6 @@
               </th>
               <th scope="col">ID</th>
               <th class="max-width">Nombre Habitacion</th>
-              <th scope="col">Photo</th>
               <th scope="col">Estado</th>
               <th scope="col">Tipo de Habitacion</th>
               <th class="col">Precio</th>
@@ -66,14 +65,13 @@
                     <!-- Utilizamos la interface para obtener los datos -->
                     <th class="text-nowrap align-middle" scope="row">{{ habitacion.id }}</th>
                     <!-- Foto -->
-                    <td class="text-nowrap align-middle">{{ habitacion.nombreHabitacion }}</td>
+                    <td class="text-nowrap align-middle">{{ habitacion.nombre }}</td>
                     <!-- Nombre -->
-                    <td class="text-nowrap align-middle">{{ habitacion.fotoHabitacion }}</td>
-                    <td class="text-nowrap align-middle">{{ habitacion.estadoHabitacion }}</td>
-                    <td class="text-nowrap align-middle">{{ habitacion.tipoHabitacion }}</td>
-                    <td class="text-nowrap align-middle"><span>{{ habitacion.precioHabitacion }}</span></td>
+                    <td class="text-nowrap align-middle">{{ habitacion.estado }}</td>
+                    <td class="text-nowrap align-middle">{{ habitacion.tipo }}</td>
+                    <td class="text-nowrap align-middle"><span>{{ habitacion.precio }}</span></td>
 
-                    <td class="text-nowrap align-middle"><span>{{ habitacion.descripcionHabitacion }}</span></td>
+                    <td class="text-nowrap align-middle"><span>{{ habitacion.descripcion }}</span></td>
                     <td class="text-center align-middle"><i class="fa fa-fw text-secondary cursor-pointer fa-toggle-on"></i></td>
                 
                     <!--==================================================================================================================

@@ -25,8 +25,8 @@ export class UsuarioeditarComponent implements OnInit {
     const nuevoUsuario: Usuario = {
       id: 0,
       nombre: inputNombre,
-      login: inputLogin,
-      password: inputPassword,
+      usuario: inputLogin,
+      contrasena: inputPassword,
       estado: inputEstado,
       tarea: inputTarea
   

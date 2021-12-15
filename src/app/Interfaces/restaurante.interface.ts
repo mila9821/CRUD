@@ -1,8 +1,6 @@
 export interface Restaurante {
-    id:                      number;
-    nombrePlato:             string;
-    precioPlato:             number;
-    fotoRestaurante:         string;
-    tieneDetalleReservaRest: any[];
-    detalleReservas:         any[];
+    id:          number;
+    nomPlato:    string;
+    precioPlato: number;
+    foto:        string;
 }

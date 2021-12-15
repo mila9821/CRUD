@@ -14,16 +14,15 @@ export class NuevohabitacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  crearHabitacion(inputNombre: string,inputEstado: string,inputTipo: string,inputPrecio: number,inputDescripcion: string,inputFoto: string){
+  crearHabitacion(inputNombre: string,inputEstado: string,inputTipo: string,inputPrecio: number,inputDescripcion: string){
     const nuevoHabitacion: Habitacion = {
       id: 0,
-      nombreHabitacion: inputNombre,
-      fotoHabitacion: inputFoto,
-      estadoHabitacion: inputEstado,
-      tipoHabitacion: inputTipo,
-      precioHabitacion: inputPrecio,
-      descripcionHabitacion: inputDescripcion,
-      tieneDetalleReservaHab: []
+      nombre: inputNombre,
+      estado: inputEstado,
+      tipo: inputTipo,
+      precio: inputPrecio,
+      descripcion: inputDescripcion,
+      detalleReservas: []
     };
 
     this.habitacionService.agregarHabitacion(nuevoHabitacion);

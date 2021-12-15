@@ -17,14 +17,14 @@ export class UsuarioService {
 
   // metodos
   listarUsuario(){
-    this.http.get<Usuario[]>('http://127.0.0.1:8080/api/usuarios')
+    this.http.get<Usuario[]>('http://127.0.0.1:8080/api/administradores')
     .subscribe((respuesta: any) => {
       this.lista = respuesta;
     });
   }
 
   agregarUsuario(usuario: Usuario){
-    this.http.post<any>('http://127.0.0.1:8080/api/usuarios', usuario).subscribe();
+    this.http.post<any>('http://127.0.0.1:8080/api/administradores', usuario).subscribe();
   }
 
   eliminarUsuario(id:number){

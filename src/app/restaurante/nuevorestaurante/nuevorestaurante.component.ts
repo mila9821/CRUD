@@ -17,11 +17,9 @@ export class NuevorestauranteComponent implements OnInit {
   crearRestaurante(inputPlato: string,inputPrecio: number, inputFoto: string){
     const nuevoRestaurante: Restaurante = {
       id: 0,
-      nombrePlato: inputPlato,
+      nomPlato: inputPlato,
       precioPlato: inputPrecio,
-      fotoRestaurante: inputFoto,
-      tieneDetalleReservaRest: [],
-      detalleReservas: []
+      foto: inputFoto,
     };
 
     this.restauranteService.agregarRestaurante(nuevoRestaurante);

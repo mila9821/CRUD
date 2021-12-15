@@ -46,18 +46,9 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col mb-3">
-            <div class="mb-3">
-            <label class="form-label">Foto</label>
-            <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="tareaInput"
-                #inputFoto></textarea>
-            </div>
-        </div>
-    </div>
     </div>
     <div class="text-end px-xl-3">
-        <a href="habitacion" (click)="crearHabitacion(inputNombre.value,inputEstado.value,inputTipo.value,inputPrecio.valueAsNumber,inputDescripcion.value,inputFoto.value)">
+        <a href="habitacion" (click)="crearHabitacion(inputNombre.value,inputEstado.value,inputTipo.value,inputPrecio.valueAsNumber,inputDescripcion.value)">
             <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">Create User</button>
           </a>
     
