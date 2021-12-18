@@ -1,0 +1,85 @@
+<form>
+    <div class="form-header">
+        <h5 class="form-title">Create Cliente</h5>
+    </div>
+    <div class="col">
+    <div class="row">
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input class="form-control" type="text" name="name" placeholder="Milagros" id="nombreInput"
+                #inputNombre/>
+        </div>
+    </div>
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Modo</label>
+        <input class="form-control" type="text" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                #inputModo/>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+
+    <div class="col">
+        <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">telefono</label>
+            <input class="form-control" type="text" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                    #inputTelefono/>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">email</label>
+            <input class="form-control" type="text" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                    #inputEmail/>
+            </div>
+        </div>
+        </div>
+        
+        </div>
+
+        <div class="col">
+            <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                <label class="form-label">Pais</label>
+                <input class="form-control" type="text" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                        #inputPais/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                <label class="form-label">DNI</label>
+                <input class="form-control" type="number" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                        #inputDni/>
+                </div>
+            </div>
+            </div>
+            
+            </div>
+
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="mb-3">
+                    <label class="form-label">Foto</label>
+                    <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="tareaInput"
+                        #inputFoto></textarea>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col">
+    
+    </div>
+    
+    <div class="text-end px-xl-3">
+        <a href="cliente" (click)="editarCliente(inputNombre.value,inputFoto.value,inputModo.value,inputTelefono.value,inputEmail.value,inputPais.value,inputDni.value)">
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">Create Cliente</button>
+          </a>
+    
+    </div>
+  </form>

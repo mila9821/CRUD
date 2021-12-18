@@ -27,5 +27,9 @@ export class ClienteService {
     this.http.delete<any>('http://127.0.0.1:8080/api/clientes/'+ id).subscribe();
   }
 
+  editarCliente(id:number, cliente:Cliente){
+    this.http.put<any>('http://127.0.0.1:8080/api/clientes/'+ id, cliente).subscribe();
+  }
+
 
 }

@@ -15,7 +15,7 @@ export class EditardetallereservaComponent implements OnInit {
   }
 
   editarDetalle(inputPrecio: number,inputAdelanto: number,inputDias: number, inputIngreso: Date | null,inputSalida: Date | null){
-    const nuevoDetalle: DetalleReserva = {
+    const editarDetalle: DetalleReserva = {
       id: 0,
       ingreso: inputIngreso,
       salida: inputSalida,
@@ -25,7 +25,7 @@ export class EditardetallereservaComponent implements OnInit {
 
     };
 
-    this.detallereservaService.editarDetalle(2, nuevoDetalle);
+    this.detallereservaService.editarDetalle(1, editarDetalle);
   }
 
 }
