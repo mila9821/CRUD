@@ -1,0 +1,63 @@
+<form>
+    <div class="form-header">
+        <h5 class="form-title">Create Detalle</h5>
+    </div>
+    <div class="col">
+    <div class="row">
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Ingreso</label>
+        <input class="form-control" type="date" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                #inputIngreso/>
+        </div>
+    </div>
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Salida</label>
+        <input class="form-control" type="date" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                #inputSalida/>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="col">
+        <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">Precio</label>
+            <input class="form-control" type="number" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                    #inputPrecio/>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">Adelanto</label>
+            <input class="form-control" type="number" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                    #inputAdelanto/>
+            </div>
+        </div>
+        </div>
+        
+        </div>
+        <div class="col">
+    
+    </div>
+    <div class="col">
+        <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">Estancia dias</label>
+            <input class="form-control" type="number" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                    #inputDias/>
+            </div>
+        </div>
+        </div>       
+        </div>
+    <div class="text-end px-xl-3">
+        <a href="detallereserva" (click)="editarDetalle(inputPrecio.valueAsNumber,inputAdelanto.valueAsNumber,inputDias.valueAsNumber, inputIngreso.valueAsDate,inputSalida.valueAsDate)">
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">Create User</button>
+          </a>
+    
+    </div>
+  </form>
